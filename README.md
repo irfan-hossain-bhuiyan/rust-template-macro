@@ -1,2 +1,2 @@
-# rust-template-macro
-# rust-template-macro
+# rust-template-macro-for-cp
+Not caring for docementation for now

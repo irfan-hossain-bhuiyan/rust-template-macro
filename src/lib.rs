@@ -1,4 +1,4 @@
-
+#![allow(unused_macros,unused_imports,non_snake_case)]
 use proc_macro::TokenStream;
 use quote::{quote, ToTokens};
 use syn::{parse_macro_input, Data, DataStruct, DeriveInput, Fields, FieldsNamed, Ident};
