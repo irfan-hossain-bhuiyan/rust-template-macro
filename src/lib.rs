@@ -2,6 +2,7 @@
 use proc_macro::TokenStream;
 use quote::{quote, ToTokens};
 use syn::{parse_macro_input, Data, DataStruct, DeriveInput, Fields, FieldsNamed, Ident};
+/// This macro can be used as a header for competitive programming
 macro_rules! header {
     () => {
 #![allow(unused_macros,unused_imports,non_snake_case)]
@@ -107,16 +108,13 @@ macro_rules! product {
     };
 }
 
-
+///Implementation for from_derive 
 #[proc_macro_derive(FromInput)]
 pub fn from_input_derive(input: TokenStream) -> TokenStream {
-    // Parse the input into a syntax tree
     let ast: DeriveInput = parse_macro_input!(input);
 
-    // Extract the name of the struct
     let struct_name = &ast.ident;
 
-    // Extract the fields of the struct
     let fields = if let Data::Struct(DataStruct {
         fields: Fields::Named(fields),
         ..

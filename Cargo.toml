@@ -5,6 +5,8 @@ edition = "2021"
 authors=["irfan-hossain-bhuiyan<irfanhbhy@gmail.com>"]
 description="A basic template for competitive programming.Still in devlopment(only I interseted in using it.)"
 license="MIT"
+readme="README.md"
+repository="https://github.com/irfan-hossain-bhuiyan/rust-template-macro.git"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
